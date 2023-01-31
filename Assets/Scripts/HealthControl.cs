@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthControl : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class HealthControl : MonoBehaviour
     public void Duraklat()
     {
         paused = true;
+    }
+    public void AnaMenu()
+    {
+        SceneManager.LoadScene("anamenü");
     }
     void Pause()
     {
