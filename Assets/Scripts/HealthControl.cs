@@ -28,7 +28,7 @@ public class HealthControl : MonoBehaviour
     }
     public void AnaMenu()
     {
-        SceneManager.LoadScene("anamenü");
+        SceneManager.LoadScene("anamenu");
     }
     void Pause()
     {
