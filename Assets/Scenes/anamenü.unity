@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21193571, g: 0.69803923, b: 0.13333331, a: 1}
+  m_Color: {r: 0.30612242, g: 1, b: 0.19387752, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -267,7 +267,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
+    m_Font: {fileID: 12800000, guid: 3a6589c5ef80ec2489eaf5ad70976831, type: 3}
     m_FontSize: 14
     m_FontStyle: 1
     m_BestFit: 1
@@ -279,7 +279,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ba\u015Flamak i\xE7in bo\u015Fluk tu\u015Funa bas\u0131n\u0131z"
+  m_Text: BASLAMAK ICIN BOSLUGA BASINIZ
 --- !u!222 &419919992
 CanvasRenderer:
   m_ObjectHideFlags: 0
