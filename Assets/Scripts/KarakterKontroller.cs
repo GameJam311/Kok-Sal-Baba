@@ -11,7 +11,7 @@ public class KarakterKontroller : MonoBehaviour
     public float hiz;
     public float ziplama;
     public bool karakterZeminde;
-    public float distanceFromObject = 0.5f;
+    public float distanceFromObject = 0f;
     int ziplamaSayac = 0;
     private void Start()
     {
