@@ -14,6 +14,7 @@ public class KarakterKontroller : MonoBehaviour
     public bool karakterZeminde;
     public float distanceFromObject = 100f;
     int ziplamaSayac = 0;
+    float saldiriSayaci = 0;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -62,7 +63,8 @@ public class KarakterKontroller : MonoBehaviour
         /***************************************************************************************/
         // Find all objects in the scene
 
-        if (Input.GetMouseButtonDown(0))
+        saldiriSayaci += Time.deltaTime;
+        if (Input.GetMouseButtonDown(0)&&saldiriSayaci>0.8f)
         {
             aSource.PlayOneShot(knife, 1f);
             playerAnimator.SetBool("isAttacking", true);
@@ -92,6 +94,7 @@ public class KarakterKontroller : MonoBehaviour
 
                 }
             }
+            saldiriSayaci = 0;
         }
         else
         {
