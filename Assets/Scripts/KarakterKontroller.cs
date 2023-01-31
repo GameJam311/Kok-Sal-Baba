@@ -39,6 +39,7 @@ public class KarakterKontroller : MonoBehaviour
         {
             karakterZeminde = true;
             ziplamaSayac = 0;
+            playerAnimator.SetBool("jump", false);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -46,6 +47,7 @@ public class KarakterKontroller : MonoBehaviour
         if (collision.gameObject.CompareTag("Zemin"))
         {
             karakterZeminde = false;
+            playerAnimator.SetBool("jump",true);
         }
     }
     void AttackControl()
@@ -60,7 +62,6 @@ public class KarakterKontroller : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-
             aSource.PlayOneShot(knife, 1f);
             playerAnimator.SetBool("isAttacking", true);
             GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
