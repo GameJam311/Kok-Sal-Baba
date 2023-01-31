@@ -11,7 +11,7 @@ public class KarakterKontroller : MonoBehaviour
     public float hiz;
     public float ziplama;
     public bool karakterZeminde;
-    public float distanceFromObject = 0f;
+    public float distanceFromObject = 100f;
     int ziplamaSayac = 0;
     private void Start()
     {
@@ -80,9 +80,14 @@ public class KarakterKontroller : MonoBehaviour
                         case "Ivy":
                             Destroy(obj,0.2f);
                             break;
+                        case "Akrep":
+                            Destroy(obj, 0.2f);
+
+                            break;
                         default:
                             break;
                     }
+
                 }
             }
         }

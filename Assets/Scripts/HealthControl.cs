@@ -5,7 +5,8 @@ using UnityEngine;
 public class HealthControl : MonoBehaviour
 {
     public GameObject kalp1, kalp2, kalp3,yarýmKalp1,yarýmKalp2,yarýmKalp3,bosKalp1,bosKalp2,bosKalp3;
-    private int can = 8;   
+    private int can = 8;
+    public float distanceFromObject = 2f;
     void Update()
     {
         KalpKontrol();
@@ -111,6 +112,30 @@ public class HealthControl : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        can --;
+        GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
+
+        // Iterate through all objects
+        foreach (GameObject obj in allObjects)
+        {
+            // Calculate the distance between the main character and the current object
+            float distance = Vector2.Distance(transform.position, obj.transform.position);
+
+            // If the distance is less than the threshold, print the object's name
+            if (distance < distanceFromObject)
+            {
+                switch (obj.name)
+                {
+                    case "Ivy":
+                        can = can - 2;
+                        break;
+                    case "Akrep":
+                        can--;
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+        }
     }
 }
