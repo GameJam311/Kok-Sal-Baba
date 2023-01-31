@@ -86,6 +86,10 @@ public class KarakterKontroller : MonoBehaviour
                             break;
                         case "Akrep":
                             obj.GetComponent<Animator>().SetBool("isDead", true);
+                            Destroy(obj);
+                            break;
+                        case "Yýlan":
+                            obj.GetComponent<Animator>().SetBool("isDeadd", true);
                             break;
                         default:
                             break;
