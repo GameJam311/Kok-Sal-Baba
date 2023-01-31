@@ -2201,6 +2201,10 @@ PrefabInstance:
       propertyPath: "yar\u0131mKalp3"
       value: 
       objectReference: {fileID: 216662797}
+    - target: {fileID: 7158634213218092220, guid: 1e0b8c0bc1df1ce4994ab54f699171ac, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e0b8c0bc1df1ce4994ab54f699171ac, type: 3}
