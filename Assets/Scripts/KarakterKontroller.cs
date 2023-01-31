@@ -62,7 +62,6 @@ public class KarakterKontroller : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-
             aSource.PlayOneShot(knife, 1f);
             playerAnimator.SetBool("isAttacking", true);
             GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
