@@ -11,7 +11,7 @@ public class KarakterKontroller : MonoBehaviour
     public float hiz;
     public float ziplama;
     public bool karakterZeminde;
-    public float distanceFromObject = 2f;
+    public float distanceFromObject = 0.5f;
     int ziplamaSayac = 0;
     private void Start()
     {
@@ -71,13 +71,13 @@ public class KarakterKontroller : MonoBehaviour
             {
                 // Calculate the distance between the main character and the current object
                 float distance = Vector2.Distance(transform.position, obj.transform.position);
-
+                
                 // If the distance is less than the threshold, print the object's name
                 if (distance < distanceFromObject)
                 {
                     switch (obj.name)
                     {
-                        case "Ivy ":
+                        case "Ivy":
                             Destroy(obj,0.2f);
                             break;
                         default:
