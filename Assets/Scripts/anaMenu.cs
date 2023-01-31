@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class anaMenu : MonoBehaviour
 {
     public Animator animator;
-    public GameObject panel;
+    public GameObject panel,text;
     float sayac = 0;
     bool start=false;
     private void Update()
@@ -13,6 +14,7 @@ public class anaMenu : MonoBehaviour
         Sayac();
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            text.SetActive(false);
             animator.SetBool("Enter", true);
             start= true;
         }       
@@ -27,5 +29,13 @@ public class anaMenu : MonoBehaviour
         {
             panel.SetActive(false);
         }
+    }
+    public void Cikis()
+    {
+        Application.Quit();
+    }
+    public void Basla()
+    {
+        SceneManager.LoadScene("Acýlýs");
     }
 }
