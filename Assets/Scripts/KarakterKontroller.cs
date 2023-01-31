@@ -80,11 +80,10 @@ public class KarakterKontroller : MonoBehaviour
                     switch (obj.name)
                     {
                         case "Ivy":
-                            Destroy(obj,0.2f);
+                            obj.GetComponent<Animator>().SetBool("isDead", true);
                             break;
                         case "Akrep":
-                            Destroy(obj, 0.2f);
-
+                            obj.GetComponent<Animator>().SetBool("isDead", true);
                             break;
                         default:
                             break;
