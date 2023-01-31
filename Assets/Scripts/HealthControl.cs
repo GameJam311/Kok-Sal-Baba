@@ -19,6 +19,14 @@ public class HealthControl : MonoBehaviour
         KalpKontrol();
         Pause();
     }
+    public void DevamEt()
+    {
+        paused = false;
+    }
+    public void Duraklat()
+    {
+        paused = true;
+    }
     void Pause()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
