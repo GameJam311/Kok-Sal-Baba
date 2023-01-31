@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 527c9219aa1eb834aa66f0a9070eaddc
+  - enabled: 1
+    path: "Assets/Scenes/anamen\xFC.unity"
+    guid: de4b079b42e160f4f95a9514d507a05e
   m_configObjects: {}
