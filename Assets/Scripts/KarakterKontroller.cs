@@ -15,6 +15,8 @@ public class KarakterKontroller : MonoBehaviour
     public float distanceFromObject = 100f;
     int ziplamaSayac = 0;
     float saldiriSayaci = 0;
+    public float timer = 0;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,6 +38,15 @@ public class KarakterKontroller : MonoBehaviour
         }
         SetTransformY(-4.5f);
     }
+    void AttackControl()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            timer += Time.deltaTime;
+            playerAnimator.SetBool("isAttacking", true); 
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Zemin"))
@@ -53,57 +64,7 @@ public class KarakterKontroller : MonoBehaviour
             playerAnimator.SetBool("jump",true);
         }
     }
-    void AttackControl()
-    {
-        /***************************************************************************************\
-         * Sayin hocam, olay su : Eger sag ya da sol mouse tik alirsa ilk kontrol yakin         *
-         * cevrede dusman olup olmadiginaa bakmak olacak. Eger varsa dusman tipine göre zarar   *
-         * verecek yoksa sadece animation oynatacak. Bu sebeple tum dusman objelerini kontrol   *
-         * etmek yerine sadece karakterinn etrafýndaki objeleri kontrol ettik.                  *
-        /***************************************************************************************/
-        // Find all objects in the scene
-
-        saldiriSayaci += Time.deltaTime;
-        if (Input.GetMouseButtonDown(0)&&saldiriSayaci>0.8f)
-        {
-            aSource.PlayOneShot(knife, 1f);
-            playerAnimator.SetBool("isAttacking", true);
-            GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
-
-            // Iterate through all objects
-            foreach (GameObject obj in allObjects)
-            {
-                // Calculate the distance between the main character and the current object
-                float distance = Vector2.Distance(transform.position, obj.transform.position);
-                
-                // If the distance is less than the threshold, print the object's name
-                if (distance < distanceFromObject)
-                {
-                    switch (obj.name)
-                    {
-                        case "Ivy":
-                            obj.GetComponent<Animator>().SetBool("isDead", true);
-                            break;
-                        case "Akrep":
-                            obj.GetComponent<Animator>().SetBool("isDead", true);
-                            Destroy(obj);
-                            break;
-                        case "Yýlan":
-                            obj.GetComponent<Animator>().SetBool("isDeadd", true);
-                            break;
-                        default:
-                            break;
-                    }
-
-                }
-            }
-            saldiriSayaci = 0;
-        }
-        else
-        {
-            playerAnimator.SetBool("isAttacking", false);
-        }
-    }
+    
     void SetTransformY(float x)//sadece y eksenini kontrol eder
     {
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
