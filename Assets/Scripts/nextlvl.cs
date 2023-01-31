@@ -6,7 +6,10 @@ using UnityEngine.UI;
 
 public class nextlvl : MonoBehaviour
 {
-
+    public void Start()
+    {
+        scene();
+    }
     public void scene()
     {
         StartCoroutine(waiter());
@@ -15,7 +18,7 @@ public class nextlvl : MonoBehaviour
 
     IEnumerator waiter()
     {
-        yield return new WaitForSeconds(3.60f);
+        yield return new WaitForSeconds(8.60f);
 
     }
 }
