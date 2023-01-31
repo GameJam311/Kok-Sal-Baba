@@ -6,19 +6,15 @@ using UnityEngine.UI;
 
 public class nextlvl : MonoBehaviour
 {
-    public void Start()
+    private void Start()
     {
-        scene();
+        StartCoroutine(WaitAndExecute(7.0f));
     }
-    public void scene()
+
+    IEnumerator WaitAndExecute(float waitTime)
     {
-        StartCoroutine(waiter());
+        yield return new WaitForSeconds(waitTime);
+        // Code to execute after waiting for 5 seconds
         SceneManager.LoadScene(1);
-    }
-
-    IEnumerator waiter()
-    {
-        yield return new WaitForSeconds(8.60f);
-
     }
 }
