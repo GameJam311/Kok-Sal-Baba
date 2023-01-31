@@ -42,8 +42,7 @@ public class KarakterKontroller : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            timer += Time.deltaTime;
-            playerAnimator.SetBool("isAttacking", true); 
+            playerAnimator.SetTrigger("isAttack");            
         }
     }
 

@@ -2286,6 +2286,10 @@ PrefabInstance:
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7114198552529626597, guid: 1e0b8c0bc1df1ce4994ab54f699171ac, type: 3}
+      propertyPath: ses
+      value: 
+      objectReference: {fileID: 508360126}
+    - target: {fileID: 7114198552529626597, guid: 1e0b8c0bc1df1ce4994ab54f699171ac, type: 3}
       propertyPath: kalp1
       value: 
       objectReference: {fileID: 804262548}

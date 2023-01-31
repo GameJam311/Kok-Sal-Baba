@@ -1,34 +1,106 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public GameObject enemy;
-    public GameObject enemy1;
-    public GameObject enemy2;
-    public GameObject enemy3;
+    public GameObject kalp1, kalp2, kalp3, yarýmKalp1, yarýmKalp2, yarýmKalp3, bosKalp1, bosKalp2, bosKalp3;
+    private int can = 7;
 
-    void Start()
-    {
-    }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && Input.GetMouseButtonDown(0))
         {
-            enemy.SetActive(false);
+            Destroy(collision.gameObject);
         }
-        if (collision.CompareTag("Enemy1"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            enemy.SetActive(false);
-        }
-        if (collision.CompareTag("Enemy2"))
-        {
-            enemy.SetActive(false);
-        }
-        if (collision.CompareTag("Enemy3"))
-        {
-            enemy.SetActive(false);
+            can--;
+            if (can == 7)
+            {
+                kalp1.SetActive(true);
+                kalp2.SetActive(true);
+                kalp3.SetActive(true);
+                yarýmKalp1.SetActive(false);
+                yarýmKalp2.SetActive(false);
+                yarýmKalp3.SetActive(false);
+                bosKalp1.SetActive(false);
+                bosKalp2.SetActive(false);
+                bosKalp3.SetActive(false);
+            }
+            if (can == 6)
+            {
+                kalp1.SetActive(true);
+                kalp2.SetActive(true);
+                kalp3.SetActive(false);
+                yarýmKalp1.SetActive(false);
+                yarýmKalp2.SetActive(false);
+                yarýmKalp3.SetActive(true);
+                bosKalp1.SetActive(false);
+                bosKalp2.SetActive(false);
+                bosKalp3.SetActive(false);
+            }
+            if (can == 5)
+            {
+                kalp1.SetActive(true);
+                kalp2.SetActive(true);
+                kalp3.SetActive(false);
+                yarýmKalp1.SetActive(false);
+                yarýmKalp2.SetActive(false);
+                yarýmKalp3.SetActive(false);
+                bosKalp1.SetActive(false);
+                bosKalp2.SetActive(false);
+                bosKalp3.SetActive(true);
+            }
+            if (can == 4)
+            {
+                kalp1.SetActive(true);
+                kalp2.SetActive(false);
+                kalp3.SetActive(false);
+                yarýmKalp1.SetActive(false);
+                yarýmKalp2.SetActive(true);
+                yarýmKalp3.SetActive(false);
+                bosKalp1.SetActive(false);
+                bosKalp2.SetActive(false);
+                bosKalp3.SetActive(true);
+            }
+            if (can == 3)
+            {
+                kalp1.SetActive(true);
+                kalp2.SetActive(false);
+                kalp3.SetActive(false);
+                yarýmKalp1.SetActive(false);
+                yarýmKalp2.SetActive(false);
+                yarýmKalp3.SetActive(false);
+                bosKalp1.SetActive(false);
+                bosKalp2.SetActive(true);
+                bosKalp3.SetActive(true);
+            }
+            if (can == 2)
+            {
+                kalp1.SetActive(false);
+                kalp2.SetActive(false);
+                kalp3.SetActive(false);
+                yarýmKalp1.SetActive(true);
+                yarýmKalp2.SetActive(false);
+                yarýmKalp3.SetActive(false);
+                bosKalp1.SetActive(false);
+                bosKalp2.SetActive(true);
+                bosKalp3.SetActive(true);
+            }
+            if (can == 1)
+            {
+                kalp1.SetActive(false);
+                kalp2.SetActive(false);
+                kalp3.SetActive(false);
+                yarýmKalp1.SetActive(false);
+                yarýmKalp2.SetActive(false);
+                yarýmKalp3.SetActive(false);
+                bosKalp1.SetActive(true);
+                bosKalp2.SetActive(true);
+                bosKalp3.SetActive(true);
+            }
         }
     }
 }
