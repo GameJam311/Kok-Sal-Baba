@@ -9,6 +9,10 @@ public class anaMenu : MonoBehaviour
     public GameObject panel,text;
     float sayac = 0;
     bool start=false;
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     private void Update()
     {
         Sayac();
