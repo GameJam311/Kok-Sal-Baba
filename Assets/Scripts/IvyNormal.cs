@@ -8,6 +8,7 @@ public class IvyNormal : MonoBehaviour
     public GameObject Ivy;
     public float timer;
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Ivy.SetActive(true);       

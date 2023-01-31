@@ -77,7 +77,7 @@ public class KarakterKontroller : MonoBehaviour
                     switch (obj.name)
                     {
                         case "Ivy":
-                            Destroy(obj);
+                            Destroy(obj,0.5f);
                             break;
                         default:
                             break;

@@ -5,14 +5,14 @@ using UnityEngine;
 public class HealthControl : MonoBehaviour
 {
     public GameObject kalp1, kalp2, kalp3,yarýmKalp1,yarýmKalp2,yarýmKalp3,bosKalp1,bosKalp2,bosKalp3;
-    private int can = 6;   
+    private int can = 8;   
     void Update()
     {
         KalpKontrol();
     }
     void KalpKontrol()
     {
-        if (can == 6) 
+        if (can == 8)
         {
             kalp1.SetActive(true);
             kalp2.SetActive(true);
@@ -24,7 +24,19 @@ public class HealthControl : MonoBehaviour
             bosKalp2.SetActive(false);
             bosKalp3.SetActive(false);
         }
-        if (can == 5)
+        if (can == 7) 
+        {
+            kalp1.SetActive(true);
+            kalp2.SetActive(true);
+            kalp3.SetActive(true);
+            yarýmKalp1.SetActive(false);
+            yarýmKalp2.SetActive(false);
+            yarýmKalp3.SetActive(false);
+            bosKalp1.SetActive(false);
+            bosKalp2.SetActive(false);
+            bosKalp3.SetActive(false);
+        }
+        if (can == 6)
         {
             kalp1.SetActive(true);
             kalp2.SetActive(true);
@@ -36,7 +48,7 @@ public class HealthControl : MonoBehaviour
             bosKalp2.SetActive(false);
             bosKalp3.SetActive(false);
         }
-        if (can == 4)
+        if (can == 5)
         {
             kalp1.SetActive(true);
             kalp2.SetActive(true);
@@ -48,7 +60,7 @@ public class HealthControl : MonoBehaviour
             bosKalp2.SetActive(false);
             bosKalp3.SetActive(true);
         }
-        if (can == 3)
+        if (can == 4)
         {
             kalp1.SetActive(true);
             kalp2.SetActive(false);
@@ -60,7 +72,7 @@ public class HealthControl : MonoBehaviour
             bosKalp2.SetActive(false);
             bosKalp3.SetActive(true);
         }
-        if (can == 2)
+        if (can == 3)
         {
             kalp1.SetActive(true);
             kalp2.SetActive(false);
@@ -72,7 +84,7 @@ public class HealthControl : MonoBehaviour
             bosKalp2.SetActive(true);
             bosKalp3.SetActive(true);
         }
-        if (can == 1)
+        if (can == 2)
         {
             kalp1.SetActive(false);
             kalp2.SetActive(false);
@@ -84,7 +96,7 @@ public class HealthControl : MonoBehaviour
             bosKalp2.SetActive(true);
             bosKalp3.SetActive(true);
         }
-        if (can == 0)
+        if (can == 1)
         {
             kalp1.SetActive(false);
             kalp2.SetActive(false);

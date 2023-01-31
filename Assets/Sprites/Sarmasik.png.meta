@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02f48510ac6bd2b48a0ebc57a47e4768
+guid: ab8c5bb4bed049c41914344abcfd2a5b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orman_arkaplan_dorduncuen_arka_layer_0
+      name: Sarmasik_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 90
         y: 0
-        width: 1920
-        height: 1080
+        width: 200
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a4c133efbc97c649b8dc83f9ad7ca5d
-      internalID: -1536279206
+      spriteID: bff9cb14637b15241abce715cb47f88f
+      internalID: 1042806264
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: c190fcae91861284f8bc4c2904f45634
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Orman_arkaplan_dorduncuen_arka_layer_0: -1536279206
+      Sarmasik_0: 1042806264
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

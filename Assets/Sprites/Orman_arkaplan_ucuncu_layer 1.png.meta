@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 02f48510ac6bd2b48a0ebc57a47e4768
+guid: ab06a5f53d31c3f4980f1b9fc31879d2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Orman_arkaplan_dorduncuen_arka_layer_0
+      name: Orman_arkaplan_ucuncu_layer 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a4c133efbc97c649b8dc83f9ad7ca5d
-      internalID: -1536279206
+      spriteID: 1a72511bddedd334b8d5b94375475e9c
+      internalID: 829763880
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 28bf6a163a2ded94db84a4a47ef8e170
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +137,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Orman_arkaplan_dorduncuen_arka_layer_0: -1536279206
+      Orman_arkaplan_ucuncu_layer 1_0: 829763880
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
