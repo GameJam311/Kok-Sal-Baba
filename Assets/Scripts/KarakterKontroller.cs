@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class KarakterKontroller : MonoBehaviour
@@ -32,6 +33,7 @@ public class KarakterKontroller : MonoBehaviour
                 ziplamaSayac++;
             }
         }
+        SetTransformY(-4.5f);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -95,5 +97,10 @@ public class KarakterKontroller : MonoBehaviour
         {
             playerAnimator.SetBool("isAttacking", false);
         }
+    }
+    void SetTransformY(float x)//sadece y eksenini kontrol eder
+    {
+        transform.position = new Vector3(x, transform.position.y, transform.position.z);
+        //degistirmek istemediginiz degerlere "transform.position" ifadesi girin
     }
 }

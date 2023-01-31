@@ -10,5 +10,6 @@ public class AgacKontrol : MonoBehaviour
     private void Update()
     {
         transform.position += Vector3.left * hiz * Time.deltaTime;
+            
     }
 }

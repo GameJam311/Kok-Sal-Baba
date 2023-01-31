@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IvyNormal : MonoBehaviour
+public class KokKontroller : MonoBehaviour
 {
     public float growthSpeed;
     public GameObject Ivy;

@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Ac\u0131l\u0131s.unity"
     guid: 73847451bb6c75943992cb87b662a95d
   - enabled: 1
+    path: Assets/Scenes/Saffan.unity
+    guid: 067476dd41db5264e9134702703f7c30
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 527c9219aa1eb834aa66f0a9070eaddc
   m_configObjects: {}
