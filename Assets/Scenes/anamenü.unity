@@ -576,6 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1743068875}
+  panel: {fileID: 1743068873}
 --- !u!4 &863745100
 Transform:
   m_ObjectHideFlags: 0
