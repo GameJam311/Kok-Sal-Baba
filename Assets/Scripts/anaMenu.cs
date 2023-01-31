@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class anaMenu : MonoBehaviour
 {
     public Animator animator;
-    public GameObject panel,text;
+    public GameObject panel, text;
     float sayac = 0;
-    bool start=false;
+    bool start = false;
     private void Start()
     {
         Time.timeScale = 1;
@@ -20,8 +20,8 @@ public class anaMenu : MonoBehaviour
         {
             text.SetActive(false);
             animator.SetBool("Enter", true);
-            start= true;
-        }       
+            start = true;
+        }
     }
     void Sayac()
     {
@@ -40,6 +40,6 @@ public class anaMenu : MonoBehaviour
     }
     public void Basla()
     {
-        SceneManager.LoadScene("Acýlýs");
+        SceneManager.LoadScene(2);
     }
 }
