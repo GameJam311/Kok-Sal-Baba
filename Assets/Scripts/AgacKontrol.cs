@@ -5,17 +5,17 @@ using UnityEngine;
 public class AgacKontrol : MonoBehaviour
 {
     public GameObject player;
-    public float hiz;    
-    private void Update()
+    Animator anim;
+  
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        transform.position += Vector3.left * hiz * Time.deltaTime;           
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
+        print("girdi");
         if (gameObject.CompareTag("Player"))
         {
-
+            anim.SetBool("yakalad", true);
         }
     }
+
+
 
 }
