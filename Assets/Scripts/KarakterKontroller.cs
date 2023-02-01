@@ -42,7 +42,8 @@ public class KarakterKontroller : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            playerAnimator.SetTrigger("isAttack");            
+            playerAnimator.SetTrigger("isAttack");
+            aSource.PlayOneShot(knife, 1f);
         }
     }
 
