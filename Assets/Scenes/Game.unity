@@ -246,6 +246,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 323470026}
+--- !u!114 &86784385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86784381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08108baa002274a4fbc0a44e3164dfcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  kalp1: {fileID: 1260786628}
+  kalp2: {fileID: 2070624868}
+  kalp3: {fileID: 131519726}
+  "yar\u0131mKalp1": {fileID: 907680069}
+  "yar\u0131mKalp2": {fileID: 586092186}
+  "yar\u0131mKalp3": {fileID: 1432160201}
+  bosKalp1: {fileID: 1633696182}
+  bosKalp2: {fileID: 1000438662}
+  bosKalp3: {fileID: 117397471}
 --- !u!1 &117397471
 GameObject:
   m_ObjectHideFlags: 0
