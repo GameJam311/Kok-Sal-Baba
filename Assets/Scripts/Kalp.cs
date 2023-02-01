@@ -27,7 +27,7 @@ public class Kalp : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && !collision.gameObject.GetComponent<Animator>().GetBool("isDead"))
         {
             can--;
             if (can == 7)
