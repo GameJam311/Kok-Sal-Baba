@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ucaksahnesi.unity
     guid: 73847451bb6c75943992cb87b662a95d
   - enabled: 1
+    path: Assets/Scenes/sinematik2.unity
+    guid: d399fb7dffcf3154b8d59742b9cafaba
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 527c9219aa1eb834aa66f0a9070eaddc
   - enabled: 1
