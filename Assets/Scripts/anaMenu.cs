@@ -16,7 +16,7 @@ public class anaMenu : MonoBehaviour
     private void Update()
     {
         Sayac();
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.anyKey)
         {
             text.SetActive(false);
             animator.SetBool("Enter", true);
