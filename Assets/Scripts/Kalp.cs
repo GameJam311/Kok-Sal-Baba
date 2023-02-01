@@ -6,19 +6,25 @@ using UnityEngine.SceneManagement;
 
 public class Kalp : MonoBehaviour
 {
-    public GameObject kalp1, kalp2, kalp3, yarýmKalp1, yarýmKalp2, yarýmKalp3, bosKalp1, bosKalp2, bosKalp3;
+    public GameObject kalp1, kalp2, kalp3, yarimKalp1, yarimKalp2, yarmKalp3, bosKalp1, bosKalp2, bosKalp3;
     private int can = 7;
+    public Animator anim;
+
+    public void start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void FixedUpdate()
     {
-        if(can == 1)
+        if (can == 1)
         {
             kalp1.SetActive(false);
             kalp2.SetActive(false);
             kalp3.SetActive(false);
-            yarýmKalp1.SetActive(false);
-            yarýmKalp2.SetActive(false);
-            yarýmKalp3.SetActive(false);
+            yarimKalp1.SetActive(false);
+            yarimKalp2.SetActive(false);
+            yarmKalp3.SetActive(false);
             bosKalp1.SetActive(true);
             bosKalp2.SetActive(true);
             bosKalp3.SetActive(true);
@@ -29,15 +35,16 @@ public class Kalp : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy") && !collision.gameObject.GetComponent<Animator>().GetBool("isDead"))
         {
+           
             can--;
             if (can == 7)
             {
                 kalp1.SetActive(true);
                 kalp2.SetActive(true);
                 kalp3.SetActive(true);
-                yarýmKalp1.SetActive(false);
-                yarýmKalp2.SetActive(false);
-                yarýmKalp3.SetActive(false);
+                yarimKalp1.SetActive(false);
+                yarimKalp2.SetActive(false);
+                yarmKalp3.SetActive(false);
                 bosKalp1.SetActive(false);
                 bosKalp2.SetActive(false);
                 bosKalp3.SetActive(false);
@@ -47,9 +54,9 @@ public class Kalp : MonoBehaviour
                 kalp1.SetActive(true);
                 kalp2.SetActive(true);
                 kalp3.SetActive(false);
-                yarýmKalp1.SetActive(false);
-                yarýmKalp2.SetActive(false);
-                yarýmKalp3.SetActive(true);
+                yarimKalp1.SetActive(false);
+                yarimKalp2.SetActive(false);
+                yarmKalp3.SetActive(true);
                 bosKalp1.SetActive(false);
                 bosKalp2.SetActive(false);
                 bosKalp3.SetActive(false);
@@ -59,9 +66,9 @@ public class Kalp : MonoBehaviour
                 kalp1.SetActive(true);
                 kalp2.SetActive(true);
                 kalp3.SetActive(false);
-                yarýmKalp1.SetActive(false);
-                yarýmKalp2.SetActive(false);
-                yarýmKalp3.SetActive(false);
+                yarimKalp1.SetActive(false);
+                yarimKalp2.SetActive(false);
+                yarmKalp3.SetActive(false);
                 bosKalp1.SetActive(false);
                 bosKalp2.SetActive(false);
                 bosKalp3.SetActive(true);
@@ -71,9 +78,9 @@ public class Kalp : MonoBehaviour
                 kalp1.SetActive(true);
                 kalp2.SetActive(false);
                 kalp3.SetActive(false);
-                yarýmKalp1.SetActive(false);
-                yarýmKalp2.SetActive(true);
-                yarýmKalp3.SetActive(false);
+                yarimKalp1.SetActive(false);
+                yarimKalp2.SetActive(true);
+                yarmKalp3.SetActive(false);
                 bosKalp1.SetActive(false);
                 bosKalp2.SetActive(false);
                 bosKalp3.SetActive(true);
@@ -83,9 +90,9 @@ public class Kalp : MonoBehaviour
                 kalp1.SetActive(true);
                 kalp2.SetActive(false);
                 kalp3.SetActive(false);
-                yarýmKalp1.SetActive(false);
-                yarýmKalp2.SetActive(false);
-                yarýmKalp3.SetActive(false);
+                yarimKalp1.SetActive(false);
+                yarimKalp2.SetActive(false);
+                yarmKalp3.SetActive(false);
                 bosKalp1.SetActive(false);
                 bosKalp2.SetActive(true);
                 bosKalp3.SetActive(true);
@@ -95,9 +102,9 @@ public class Kalp : MonoBehaviour
                 kalp1.SetActive(false);
                 kalp2.SetActive(false);
                 kalp3.SetActive(false);
-                yarýmKalp1.SetActive(true);
-                yarýmKalp2.SetActive(false);
-                yarýmKalp3.SetActive(false);
+                yarimKalp1.SetActive(true);
+                yarimKalp2.SetActive(false);
+                yarmKalp3.SetActive(false);
                 bosKalp1.SetActive(false);
                 bosKalp2.SetActive(true);
                 bosKalp3.SetActive(true);
