@@ -8,7 +8,7 @@ public class nextlvl : MonoBehaviour
 {
     private void Start()
     {
-        StartCoroutine(WaitAndExecute(7.0f));
+        StartCoroutine(WaitAndExecute(8.0f));
     }
 
     IEnumerator WaitAndExecute(float waitTime)
