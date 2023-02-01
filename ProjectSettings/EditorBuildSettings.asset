@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/acilis.unity
+    guid: 1c2a8252b52d6cf4ea3bbe72bd80abe7
+  - enabled: 1
     path: Assets/Scenes/ucaksahnesi.unity
     guid: 73847451bb6c75943992cb87b662a95d
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 527c9219aa1eb834aa66f0a9070eaddc
-  - enabled: 1
-    path: Assets/Scenes/acilis.unity
-    guid: 1c2a8252b52d6cf4ea3bbe72bd80abe7
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 3a41a4c223164d84f90b54ddb678347c

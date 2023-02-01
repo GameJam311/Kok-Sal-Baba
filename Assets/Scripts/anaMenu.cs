@@ -40,6 +40,6 @@ public class anaMenu : MonoBehaviour
     }
     public void Basla()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
