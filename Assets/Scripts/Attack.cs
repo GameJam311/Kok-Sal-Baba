@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    public ParticleSystem parcalanma;
-    public Transform hedef;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") && Input.GetMouseButtonDown(0))
+        if (collision.gameObject.tag.Equals("Enemy") && Input.GetMouseButtonDown(0))
         {
+            collision.gameObject.GetComponent<Animator>().SetBool("isDead", true);
             Destroy(collision.gameObject);
-            ParticleSystem go = Instantiate(parcalanma, transform.position, transform.rotation) as ParticleSystem;
-            Destroy(go, 1);
         }
     }
 }

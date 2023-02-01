@@ -14,7 +14,6 @@ public class KarakterKontroller : MonoBehaviour
     public bool karakterZeminde;
     public float distanceFromObject = 100f;
     int ziplamaSayac = 0;
-    float saldiriSayaci = 0;
     public float timer = 0;
 
     private void Start()
@@ -30,10 +29,11 @@ public class KarakterKontroller : MonoBehaviour
         rb.AddForce(hareket);
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            ziplamaSayac++;
             if (ziplamaSayac < 2)
             {
                 rb.velocity = Vector2.up * ziplama;
-                ziplamaSayac++;
+                
             }
         }
         SetTransformY(-4.5f);
@@ -55,7 +55,6 @@ public class KarakterKontroller : MonoBehaviour
             ziplamaSayac = 0;
             playerAnimator.SetBool("jump", false);
         }
-        
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -64,19 +63,7 @@ public class KarakterKontroller : MonoBehaviour
             karakterZeminde = false;
             playerAnimator.SetBool("jump",true);
         }
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            playerAnimator.SetBool("dmg", false);
-        }
     }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            playerAnimator.SetBool("dmg", true);
-        }
-    }
-
     void SetTransformY(float x)//sadece y eksenini kontrol eder
     {
         transform.position = new Vector3(x, transform.position.y, transform.position.z);

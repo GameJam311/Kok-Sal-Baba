@@ -15,6 +15,6 @@ public class nextlvl : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         // Code to execute after waiting for 5 seconds
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
 }
