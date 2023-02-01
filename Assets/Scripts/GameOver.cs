@@ -14,4 +14,8 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene("acilis");
     }
+    public void hazýrlayanlar()
+    {
+        SceneManager.LoadScene(5);
+    }
 }
