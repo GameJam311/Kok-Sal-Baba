@@ -9,7 +9,7 @@ public class Attack : MonoBehaviour
         if (collision.gameObject.tag.Equals("Enemy") && Input.GetMouseButtonDown(0))
         {
             collision.gameObject.GetComponent<Animator>().SetBool("isDead", true);
-            Destroy(collision.gameObject);
+            Destroy(collision.gameObject,1.7f);
         }
     }
 }
