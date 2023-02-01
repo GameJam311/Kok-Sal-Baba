@@ -55,6 +55,7 @@ public class KarakterKontroller : MonoBehaviour
             ziplamaSayac = 0;
             playerAnimator.SetBool("jump", false);
         }
+        
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -63,8 +64,19 @@ public class KarakterKontroller : MonoBehaviour
             karakterZeminde = false;
             playerAnimator.SetBool("jump",true);
         }
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            playerAnimator.SetBool("dmg", false);
+        }
     }
-    
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            playerAnimator.SetBool("dmg", true);
+        }
+    }
+
     void SetTransformY(float x)//sadece y eksenini kontrol eder
     {
         transform.position = new Vector3(x, transform.position.y, transform.position.z);
