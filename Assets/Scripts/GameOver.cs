@@ -16,6 +16,6 @@ public class GameOver : MonoBehaviour
     }
     public void hazýrlayanlar()
     {
-
+        SceneManager.LoadScene(5);
     }
 }
