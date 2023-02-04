@@ -9,14 +9,14 @@ public class getdmg : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Enemy"))
         {
-            player.GetComponent<Animator>().SetBool("dmg", true);
+            player.GetComponent<Animator>().SetBool("ishurt", true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Enemy"))
         {
-            player.GetComponent<Animator>().SetBool("dmg", false);
+            player.GetComponent<Animator>().SetBool("ishurt", false);
         }
     }
 }
