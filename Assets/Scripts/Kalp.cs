@@ -35,7 +35,7 @@ public class Kalp : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy") && !collision.gameObject.GetComponent<Animator>().GetBool("isDead"))
         {
-           
+            //anim.SetTrigger("ishurt");
             can--;
             if (can == 7)
             {

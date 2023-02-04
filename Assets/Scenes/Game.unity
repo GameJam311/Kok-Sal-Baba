@@ -234,12 +234,13 @@ MonoBehaviour:
   kalp1: {fileID: 1260786628}
   kalp2: {fileID: 2070624868}
   kalp3: {fileID: 131519726}
-  "yar\u0131mKalp1": {fileID: 907680069}
-  "yar\u0131mKalp2": {fileID: 586092186}
-  "yar\u0131mKalp3": {fileID: 1432160201}
+  yarimKalp1: {fileID: 907680069}
+  yarimKalp2: {fileID: 586092186}
+  yarmKalp3: {fileID: 1432160201}
   bosKalp1: {fileID: 1633696182}
   bosKalp2: {fileID: 1000438662}
   bosKalp3: {fileID: 117397471}
+  anim: {fileID: 0}
 --- !u!1 &117397471
 GameObject:
   m_ObjectHideFlags: 0
